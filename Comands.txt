@@ -1,0 +1,8 @@
+
+- Command to execute tests automatically using CLI:
+
+newman run '..\postmanNewman\ChallengeSession2\tests\backEnd\collection\PostmanCollection.postman_collection.json' -e '..\postmanNewman\ChallengeSession2\tests\backEnd\envVariables\todoistEnv.postman_environment.json'
+
+- Command to create the report:
+
+npx newman run '..\postmanNewman\ChallengeSession2\tests\backend\collection\PostmanCollection.postman_collection.json' -e '..\postmanNewman\ChallengeSession2\tests\backend\envVariables\todoistEnv.postman_environment.json' -r htmlextra --reporter-htmlextra-export '..\postmanNewman\ChallengeSession2\tests\backend\reports\report.html'
